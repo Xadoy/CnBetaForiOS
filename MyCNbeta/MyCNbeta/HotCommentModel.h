@@ -15,4 +15,5 @@
 
 +(void)getHotCommentWithReceiver:(id)targetID selector:(SEL)selector;
 +(NSMutableArray*)getCommentModelsWithArray:(NSArray*)arr;
++(void)getArticleWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector;
 @end

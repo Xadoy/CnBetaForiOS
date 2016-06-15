@@ -156,11 +156,11 @@
 		5481AD5A1D054B5200AAD286 /* WeiboShareViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5481ACE11D054B5200AAD286 /* WeiboShareViewController.nib */; };
 		5481AD5C1D05511400AAD286 /* ddddfault.png in Resources */ = {isa = PBXBuildFile; fileRef = 5481AD5B1D05511400AAD286 /* ddddfault.png */; };
 		5481AD611D055B3F00AAD286 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD601D055B3F00AAD286 /* NewsModel.m */; };
-		5481AD641D0562DF00AAD286 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD631D0562DF00AAD286 /* ThirdViewController.m */; };
 		5481AD671D05630B00AAD286 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD661D05630B00AAD286 /* FourthViewController.m */; };
 		5481AD6C1D069F6200AAD286 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5481AD6B1D069F6200AAD286 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */; };
 		5481AD8C1D07EF6B00AAD286 /* FirstWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */; };
+		5496901E1D11273900097B91 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496901D1D11273900097B91 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -368,8 +368,6 @@
 		5481AD5B1D05511400AAD286 /* ddddfault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ddddfault.png; sourceTree = "<group>"; };
 		5481AD5F1D055B3F00AAD286 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		5481AD601D055B3F00AAD286 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
-		5481AD621D0562DF00AAD286 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		5481AD631D0562DF00AAD286 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		5481AD651D05630B00AAD286 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		5481AD661D05630B00AAD286 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		5481AD6B1D069F6200AAD286 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
@@ -377,6 +375,8 @@
 		5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewCell.m; sourceTree = "<group>"; };
 		5481AD8A1D07EF6B00AAD286 /* FirstWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstWebViewController.h; sourceTree = "<group>"; };
 		5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstWebViewController.m; sourceTree = "<group>"; };
+		5496901C1D11273900097B91 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		5496901D1D11273900097B91 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,12 +535,11 @@
 		5481AC301D052AFE00AAD286 /* MyCNbeta */ = {
 			isa = PBXGroup;
 			children = (
+				549690181D11257400097B91 /* ThirdView */,
 				5481AD5E1D055B1B00AAD286 /* Model */,
 				5481AC341D052AFE00AAD286 /* AppDelegate.h */,
 				5481AC351D052AFE00AAD286 /* AppDelegate.m */,
 				542CF79F1D0D31250086C66B /* SecondView */,
-				5481AD621D0562DF00AAD286 /* ThirdViewController.h */,
-				5481AD631D0562DF00AAD286 /* ThirdViewController.m */,
 				5481AD651D05630B00AAD286 /* FourthViewController.h */,
 				5481AD661D05630B00AAD286 /* FourthViewController.m */,
 				5481AC3D1D052AFE00AAD286 /* Main.storyboard */,
@@ -735,6 +734,15 @@
 				5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */,
 			);
 			name = FirstView;
+			sourceTree = "<group>";
+		};
+		549690181D11257400097B91 /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				5496901C1D11273900097B91 /* ThirdViewController.h */,
+				5496901D1D11273900097B91 /* ThirdViewController.m */,
+			);
+			name = ThirdView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1012,7 +1020,7 @@
 				5481AD8C1D07EF6B00AAD286 /* FirstWebViewController.m in Sources */,
 				5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */,
 				542CF79D1D0D03750086C66B /* UIScrollView+MJRefresh.m in Sources */,
-				5481AD641D0562DF00AAD286 /* ThirdViewController.m in Sources */,
+				5496901E1D11273900097B91 /* ThirdViewController.m in Sources */,
 				542CF7951D0D03750086C66B /* MJRefreshBackNormalFooter.m in Sources */,
 				5481AC361D052AFE00AAD286 /* AppDelegate.m in Sources */,
 				542CF7981D0D03750086C66B /* MJRefreshNormalHeader.m in Sources */,

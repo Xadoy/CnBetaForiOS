@@ -10,6 +10,7 @@
 
 @interface FirstViewController : UIViewController
 
+-(void)viewWillAppearForOverRide:(BOOL)animated;
 
 @end
 

@@ -13,7 +13,6 @@
 @interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray      *_newsArr;
-    UIRefreshControl    *_refreshControl;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -24,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"%@",[NewsModel stringForNewsList]);
+//    NSLog(@"%@",[NewsModel stringForNewsList]);
 
     
     _tableView.delegate = self;
@@ -91,6 +90,7 @@
     
     cell.thumbImg.image = temp.thumbImg;
     cell.summaryLabel.text = temp.summary;
+    cell.timeLabel.text = temp.pubTime;
     
     
     // set cells' selection style
@@ -136,6 +136,11 @@
     
     [temp setValue:sender forKey:@"htmlString"];
     
+}
+
+#pragma mark ===========================for override================================
+-(void)viewWillAppearForOverRide:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

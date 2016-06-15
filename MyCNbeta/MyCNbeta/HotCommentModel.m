@@ -27,6 +27,9 @@
          }];
     
 }
++(void)getArticleWithID:(NSString *)sid Receiver:(id)targetID selector:(SEL)selector{
+    [super getArticleWithID:sid Receiver:targetID selector:selector notificationName:@"HotCommenthtmlGetSuccess"];
+}
 +(NSString*)stringForHotCommentList{
     NSString *result = @"http://api.cnbeta.com/capi?";
                                                //app_key=10000&format=json&method=Article.RecommendComment&timestamp=&v=1.0&sign=
