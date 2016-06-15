@@ -2,7 +2,7 @@
 //  ThirdViewController.h
 //  MyCNbeta
 //
-//  Created by Adoy on 6/6/16.
+//  Created by Adoy on 6/15/16.
 //  Copyright © 2016 Adoy. All rights reserved.
 //
 

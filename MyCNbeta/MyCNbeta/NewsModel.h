@@ -16,6 +16,7 @@
 @property (nonatomic,strong) NSString *articleID;
 @property (nonatomic,strong) UIImage  *thumbImg;
 @property (nonatomic,strong) NSString *summary;
+@property (nonatomic,strong) NSString *pubTime;
 
 
 //-(NewsModel)getNews
@@ -26,4 +27,6 @@
 +(void)getNewsListWithReceiver:(id)targetID selector:(SEL)selector;//20
 +(void)getArticleWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector;
 +(void)getArticleAfterID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector;
++(void)getTopTenNewsListWithReceiver:(id)targetID selector:(SEL)selector;
++(void)getArticleWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector notificationName:(NSString*)notiName;//for override
 @end

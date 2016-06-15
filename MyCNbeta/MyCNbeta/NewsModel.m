@@ -85,6 +85,26 @@
              NSLog(@"%@",error);
          }];
 }
++(void)getArticleWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector notificationName:(NSString *)notiName{
+    NSString *url = [self stringForNewsContentWithArticleID:sid];
+    [[NSNotificationCenter defaultCenter]addObserver:targetID selector:selector name:notiName object:nil];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //    AFHTTPResponseSerializer *temp = [AFHTTPResponseSerializer serializer];
+    //    temp.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html" , nil];
+    //    manager.requestSerializer = temp;
+    
+    [manager GET:url parameters:nil
+         success:^(NSURLSessionDataTask *task, id dic){
+             NSLog(@"success --- ");
+             [[NSNotificationCenter defaultCenter]postNotificationName:notiName object:dic];
+             
+         }
+         failure:^(NSURLSessionDataTask *task, NSError *error){
+             NSLog(@"fail");
+             NSLog(@"%@",error);
+         }];
+}
 
 +(void)getNewsListWithReceiver:(id)targetID selector:(SEL)selector{
     
@@ -102,6 +122,23 @@
              NSLog(@"%@",error);
          }];
 
+}
++(void)getTopTenNewsListWithReceiver:(id)targetID selector:(SEL)selector{
+    
+    NSString *url = [self stringForTopTenNewsList];
+    [[NSNotificationCenter defaultCenter]addObserver:targetID selector:selector name:@"topTenJsonGetSuccess" object:nil];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:url parameters:nil
+         success:^(NSURLSessionDataTask *task, id dic){
+             NSLog(@"success --- ");
+             [[NSNotificationCenter defaultCenter]postNotificationName:@"topTenJsonGetSuccess" object:dic];
+             
+         }
+         failure:^(NSURLSessionDataTask *task, NSError *error){
+             NSLog(@"fail");
+             NSLog(@"%@",error);
+         }];
+    
 }
 +(NSString*)stringForNewsContentAfterArticleID:(NSString*)sid{
     NSString *result = @"http://api.cnbeta.com/capi?";
@@ -129,9 +166,29 @@
     NSLog(result);
     return result;
 }
+
++(NSString*)stringForTopTenNewsList{
+    NSString *result = @"http://api.cnbeta.com/capi?";
+    //app_key=10000&format=json&method=Article.Top10&timestamp=v=1.0&sign=
+    NSString *url = [NSString stringWithFormat:@"app_key=10000&format=json&method=Article.Top10&timestamp=%dv=1.0&",[self currentTimeStamp]];
+    NSString *temp = @"mpuffgvbvbttn3Rc";
+    NSLog([url stringByAppendingString:temp]);
+    temp = [self md5:[url stringByAppendingString:temp]];
+    //[self md5:url];
+    url = [url stringByAppendingString:[NSString stringWithFormat:@"sign=%@",temp]];
+    result = [result stringByAppendingString:url];
+    
+    
+    
+    
+    
+    
+    
+    return result;
+}
 +(NSString*)stringForNewsList{
     NSString *result = @"http://api.cnbeta.com/capi?";
-                    //app_key=10000&format=json&method=Article.NewsContent&sid=&timestamp=&v=1.0&sign=
+                    //app_key=10000&format=json&method=Article.Top10&timestamp=v=1.0&sign=
     NSString *url = @"app_key=10000&format=json&method=Article.Lists&timestamp=";
     url = [url stringByAppendingString:[NSString stringWithFormat:@"%d&v=1.0&",[self currentTimeStamp]]];
     NSString *temp = @"mpuffgvbvbttn3Rc";
@@ -159,6 +216,7 @@
         aNewsModel.title = [info objectForKey:@"title"];
         aNewsModel.articleID = [info objectForKey:@"sid"];
         aNewsModel.summary = [info objectForKey:@"summary"];
+        aNewsModel.pubTime = [info objectForKey:@"pubtime"];
         UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[info objectForKey:@"thumb"]]]];
         aNewsModel.thumbImg = img;
         [modelsArr addObject:aNewsModel];

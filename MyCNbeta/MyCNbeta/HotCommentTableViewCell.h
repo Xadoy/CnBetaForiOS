@@ -10,5 +10,6 @@
 
 @interface HotCommentTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
