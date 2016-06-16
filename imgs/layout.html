@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <style>
+        * {
+            -webkit-user-select: none;
+        }
+
+        a {
+            display: inline;
+            text-decoration: none;
+            color: #37529B;
+            word-wrap: break-word;
+        }
+
+        img {
+            height: auto;
+            max-height: auto;
+            max-width: 290px;
+            margin: 5px;
+        }
+
+        embed {
+            display: none;
+        }
+
+        object {
+            display: none
+        }
+
+        .crcrisp {
+            width: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<span id="content" style="font-family:Helvetica;font-size:11pt;">
+            <h2>%@</h2>
+            <p style="margin:5px 5px;text-align:left;">%@</p>
+            </span>
+<br/><br/><br/>
+<!--
+<script type="text/javascript" src="http://www.cnbeta.com/api/mootools.js"></script>
+<script type="text/javascript">
+var list = /[a-zA-Z0-9／「」〈〉《》￥［］〔〕,.""。、・ー]/;
+var s = "<span class=\"crcrisp\"> </span>";
+
+$$("#content p").each(function(elt, index){
+   var text = elt.get("text");
+   var newText = "";
+   var textArr = text.split("");
+   textArr.each(function(t, i){
+
+   if( textArr[i + 1] && !t.match(list) && !textArr[i + 1].match(list) ){
+       newText += t + s;
+   }else
+       newText += t;
+});
+elt.set("html", newText);
+});
+
+</script>
+-->
+</body>
+</html>
