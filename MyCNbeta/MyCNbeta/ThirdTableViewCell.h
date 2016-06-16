@@ -13,8 +13,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *thumbImg;
 @property (weak, nonatomic) IBOutlet UILabel *summaryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *viewCountsLabel;
+@property (strong,nonatomic)  UIView           *barView;
 
+@property (weak, nonatomic) IBOutlet UILabel *commentCountsLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 
+
+-(void)pleaseAddBarViewForRow:(NSInteger)row;
 @end

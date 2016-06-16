@@ -10,6 +10,7 @@
 #import "NewsModel.h"
 #import "ThirdTableViewCell.h"
 #import "MJRefresh.h"
+#define SCREENWIDTH 320.0
 @interface ThirdViewController ()
 
 {
@@ -85,8 +86,12 @@
     cell.thumbImg.image = temp.thumbImg;
     cell.summaryLabel.text = temp.summary;
     cell.timeLabel.text = temp.pubTime;
+    //view counts and comments
+    cell.viewCountsLabel.text = (temp.viewCounts.length<5)?temp.viewCounts:@"9999+";
+    cell.commentCountsLabel.text = (temp.commentCounts.length<5)?temp.commentCounts:@"9999+";
     
-    
+
+    [cell pleaseAddBarViewForRow:row];
     // set cells' selection style
     UIView *customColorView = [[UIView alloc] init];
     customColorView.backgroundColor = [UIColor colorWithRed:73/255.0

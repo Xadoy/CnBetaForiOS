@@ -161,6 +161,16 @@
 		5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */; };
 		5481AD8C1D07EF6B00AAD286 /* FirstWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */; };
 		5496901E1D11273900097B91 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496901D1D11273900097B91 /* ThirdViewController.m */; };
+		549690201D113C9300097B91 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496901F1D113C9300097B91 /* setting.png */; };
+		549690221D113F6F00097B91 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690211D113F6F00097B91 /* setting@2x.png */; };
+		549690251D11474500097B91 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690231D11474500097B91 /* eye.png */; };
+		549690261D11474500097B91 /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690241D11474500097B91 /* eye@2x.png */; };
+		549690291D114B6B00097B91 /* eye_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690271D114B6B00097B91 /* eye_24.png */; };
+		5496902A1D114B6B00097B91 /* eye_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690281D114B6B00097B91 /* eye_24@2x.png */; };
+		5496902D1D11568700097B91 /* commentsForCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902B1D11568700097B91 /* commentsForCell.png */; };
+		5496902E1D11568700097B91 /* commentsForCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902C1D11568700097B91 /* commentsForCell@2x.png */; };
+		549690311D11572700097B91 /* message7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902F1D11572700097B91 /* message7.png */; };
+		549690321D11572700097B91 /* message7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690301D11572700097B91 /* message7@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -377,6 +387,16 @@
 		5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstWebViewController.m; sourceTree = "<group>"; };
 		5496901C1D11273900097B91 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		5496901D1D11273900097B91 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		5496901F1D113C9300097B91 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = ../MyCNbeta/MyCNbeta/setting.png; sourceTree = "<group>"; };
+		549690211D113F6F00097B91 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		549690231D11474500097B91 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		549690241D11474500097B91 /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
+		549690271D114B6B00097B91 /* eye_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye_24.png; sourceTree = "<group>"; };
+		549690281D114B6B00097B91 /* eye_24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_24@2x.png"; sourceTree = "<group>"; };
+		5496902B1D11568700097B91 /* commentsForCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commentsForCell.png; sourceTree = "<group>"; };
+		5496902C1D11568700097B91 /* commentsForCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "commentsForCell@2x.png"; sourceTree = "<group>"; };
+		5496902F1D11572700097B91 /* message7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message7.png; sourceTree = "<group>"; };
+		549690301D11572700097B91 /* message7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message7@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -582,9 +602,19 @@
 		5481AC671D054B5200AAD286 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				5496902F1D11572700097B91 /* message7.png */,
+				549690301D11572700097B91 /* message7@2x.png */,
+				5496902B1D11568700097B91 /* commentsForCell.png */,
+				5496902C1D11568700097B91 /* commentsForCell@2x.png */,
+				549690271D114B6B00097B91 /* eye_24.png */,
+				549690281D114B6B00097B91 /* eye_24@2x.png */,
+				549690231D11474500097B91 /* eye.png */,
+				549690241D11474500097B91 /* eye@2x.png */,
+				549690211D113F6F00097B91 /* setting@2x.png */,
 				5481AC681D054B5200AAD286 /* about-crew.png */,
 				5481AC691D054B5200AAD286 /* about.html */,
 				5481AC6A1D054B5200AAD286 /* ajax-loader.gif */,
+				5496901F1D113C9300097B91 /* setting.png */,
 				5481AC6B1D054B5200AAD286 /* allSection.png */,
 				5481AC6C1D054B5200AAD286 /* allSection@2x.png */,
 				5481AC6D1D054B5200AAD286 /* Icon.png */,
@@ -865,6 +895,7 @@
 				5481AC441D052AFE00AAD286 /* LaunchScreen.storyboard in Resources */,
 				5481AD401D054B5200AAD286 /* noconnection.html in Resources */,
 				5481ACEE1D054B5200AAD286 /* arrow-forward.png in Resources */,
+				549690251D11474500097B91 /* eye.png in Resources */,
 				5481ACE71D054B5200AAD286 /* Icon.png in Resources */,
 				5481AD031D054B5200AAD286 /* CellCommentIcon.png in Resources */,
 				5481AD211D054B5200AAD286 /* hudsupport@2x.png in Resources */,
@@ -876,6 +907,7 @@
 				5481AD4B1D054B5200AAD286 /* shadow-down@2x.png in Resources */,
 				5481AD111D054B5200AAD286 /* Default@2x.png in Resources */,
 				5481AD2E1D054B5200AAD286 /* layout.html in Resources */,
+				5496902D1D11568700097B91 /* commentsForCell.png in Resources */,
 				5481AD3E1D054B5200AAD286 /* newsListCellBackground@2x.png in Resources */,
 				5481AD3F1D054B5200AAD286 /* noconnection-offline.png in Resources */,
 				5481AD061D054B5200AAD286 /* CellOfflineIcon@2x.png in Resources */,
@@ -910,6 +942,7 @@
 				5481AD5A1D054B5200AAD286 /* WeiboShareViewController.nib in Resources */,
 				5481ACF41D054B5200AAD286 /* blueArrow.png in Resources */,
 				5481ACED1D054B5200AAD286 /* arrow-down@2x.png in Resources */,
+				549690291D114B6B00097B91 /* eye_24.png in Resources */,
 				5481ACF01D054B5200AAD286 /* arrow-up.png in Resources */,
 				5481ACF31D054B5200AAD286 /* ban@2x.png in Resources */,
 				5481AD1A1D054B5200AAD286 /* hmtabbar.png in Resources */,
@@ -919,6 +952,7 @@
 				5481AD531D054B5200AAD286 /* topTenBadge@2x.png in Resources */,
 				5481ACF61D054B5200AAD286 /* BPushConfig.plist in Resources */,
 				5481AD521D054B5200AAD286 /* topTenBadge.png in Resources */,
+				549690311D11572700097B91 /* message7.png in Resources */,
 				5481ACEC1D054B5200AAD286 /* arrow-down.png in Resources */,
 				5481AD5C1D05511400AAD286 /* ddddfault.png in Resources */,
 				5481AD341D054B5200AAD286 /* navigationBarBackButton@2x.png in Resources */,
@@ -928,7 +962,10 @@
 				5481AD0B1D054B5200AAD286 /* commentbg.png in Resources */,
 				5481AD371D054B5200AAD286 /* navigationBarLogo.png in Resources */,
 				5481AD461D054B5200AAD286 /* reader in Resources */,
+				549690261D11474500097B91 /* eye@2x.png in Resources */,
+				549690201D113C9300097B91 /* setting.png in Resources */,
 				5481ACF81D054B5200AAD286 /* cbaboutiosdev.png in Resources */,
+				549690321D11572700097B91 /* message7@2x.png in Resources */,
 				5481ACE91D054B5200AAD286 /* AppIcon60x60@2x.png in Resources */,
 				5481AD1E1D054B5200AAD286 /* hudagainst.png in Resources */,
 				5481AD2D1D054B5200AAD286 /* LaunchImage-2@2x.png in Resources */,
@@ -952,6 +989,7 @@
 				5481AD321D054B5200AAD286 /* navbar_bg@2x.png in Resources */,
 				5481AD4D1D054B5200AAD286 /* shadow-up@2x.png in Resources */,
 				5481AD121D054B5200AAD286 /* devicon.png in Resources */,
+				5496902E1D11568700097B91 /* commentsForCell@2x.png in Resources */,
 				5481AD511D054B5200AAD286 /* TopTen@2x.png in Resources */,
 				5481AD291D054B5200AAD286 /* LaunchImage-2-568h@2x.png in Resources */,
 				5481AD571D054B5200AAD286 /* watermark.png in Resources */,
@@ -961,12 +999,14 @@
 				5481ACE21D054B5200AAD286 /* about-crew.png in Resources */,
 				5481AD041D054B5200AAD286 /* CellCommentIcon@2x.png in Resources */,
 				5481AD541D054B5200AAD286 /* TopTenItem.nib in Resources */,
+				5496902A1D114B6B00097B91 /* eye_24@2x.png in Resources */,
 				5481AD081D054B5200AAD286 /* cmtbg@2x.png in Resources */,
 				5481AD3D1D054B5200AAD286 /* newsListCellBackground.png in Resources */,
 				5481AD141D054B5200AAD286 /* Entitlements.plist in Resources */,
 				5481AD261D054B5200AAD286 /* imgpholder@2x.png in Resources */,
 				5481ACFD1D054B5200AAD286 /* cbnew120.png in Resources */,
 				5481AD161D054B5200AAD286 /* hitCounterIcon.png in Resources */,
+				549690221D113F6F00097B91 /* setting@2x.png in Resources */,
 				5481ACE31D054B5200AAD286 /* about.html in Resources */,
 				5481AD551D054B5200AAD286 /* vote.png in Resources */,
 				5481AC3F1D052AFE00AAD286 /* Main.storyboard in Resources */,
