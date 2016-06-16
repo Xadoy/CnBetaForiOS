@@ -178,6 +178,11 @@
                                     <rect key="frame" x="0.0" y="67" width="320" height="501"/>
                                 </variation>
                             </webView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gl-tS-Dix">
+                                <rect key="frame" x="20" y="531" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查看评论"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -191,13 +196,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="bek-k2-4Rh" id="BZu-7N-UlE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g8-jh-WBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570.5" y="-509"/>
+            <point key="canvasLocation" x="1570" y="-509"/>
         </scene>
         <!--热门评论-->
         <scene sceneID="eiV-px-fbt">

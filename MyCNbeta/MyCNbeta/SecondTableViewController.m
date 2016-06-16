@@ -14,7 +14,7 @@
 #define FONTSIZE 18
 #define TITLEFONTSIZE 12
 #define LABELWIDTH 304
-#define GAPHEIGHT 6
+#define GAPHEIGHT 10
 @interface SecondTableViewController ()
 {
     NSMutableArray      *_hotCommentsArr;
@@ -58,14 +58,18 @@
 }
 
 -(void)didGetCommentList:(NSNotification*)noti{
-    NSMutableDictionary *dic = noti.object;
-    NSArray *arr = [dic objectForKey:@"result"];
-    _hotCommentsArr = [HotCommentModel getCommentModelsWithArray:arr];
-    [self.tableView reloadData];
-    
-    [self.tableView.mj_header endRefreshing];
-    
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"hotCommentGetSuccess" object:nil];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSMutableDictionary *dic = noti.object;
+        NSArray *arr = [dic objectForKey:@"result"];
+        _hotCommentsArr = [HotCommentModel getCommentModelsWithArray:arr];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+            [self.tableView.mj_header endRefreshing];
+        });
+        
+        [[NSNotificationCenter defaultCenter]removeObserver:self name:@"hotCommentGetSuccess" object:nil];
+    });
 }
 
 -(void)refreshCommentList{

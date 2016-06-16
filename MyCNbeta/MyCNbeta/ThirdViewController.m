@@ -48,15 +48,19 @@
     
 }
 -(void)didGetJson:(NSNotification*)noti{
-    NSMutableDictionary *dic = noti.object;
-    NSArray *arr = [dic objectForKey:@"result"];
-    //    NSLog(@"%d",arr.count);
-    _newsArr = [NewsModel getNewsModelsWithArray:arr];
-    [_tableView reloadData];
-    
-    [_tableView.mj_header endRefreshing];
-    
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"topTenJsonGetSuccess" object:nil];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSMutableDictionary *dic = noti.object;
+        NSArray *arr = [dic objectForKey:@"result"];
+        //    NSLog(@"%d",arr.count);
+        _newsArr = [NewsModel getNewsModelsWithArray:arr];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_tableView reloadData];
+            [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+            [_tableView.mj_header endRefreshing];
+        });
+        
+        [[NSNotificationCenter defaultCenter]removeObserver:self name:@"topTenJsonGetSuccess" object:nil];
+    });
 }
 
 -(void)viewWillAppear:(BOOL)animated{
