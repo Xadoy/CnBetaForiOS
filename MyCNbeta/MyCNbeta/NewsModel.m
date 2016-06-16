@@ -217,8 +217,11 @@
         aNewsModel.articleID = [info objectForKey:@"sid"];
         aNewsModel.summary = [info objectForKey:@"summary"];
         aNewsModel.pubTime = [info objectForKey:@"pubtime"];
+        aNewsModel.viewCounts = [info objectForKey:@"counter"];
+        aNewsModel.commentCounts = [info objectForKey:@"comments"];
         UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[info objectForKey:@"thumb"]]]];
         aNewsModel.thumbImg = img;
+        
         [modelsArr addObject:aNewsModel];
     }
     

@@ -93,6 +93,19 @@
     cell.timeLabel.text = temp.pubTime;
     
     
+    
+    
+    //view counts and comments
+    cell.viewCountsLabel.text = (temp.viewCounts.length<5)?temp.viewCounts:@"9999+";
+    cell.commentCountsLabel.text = (temp.commentCounts.length<5)?temp.commentCounts:@"9999+";
+//    CGRect timeLabelRect = cell.timeLabel.frame;
+//    UIImageView *imgView2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"eye_24"]];
+//    imgView2.frame = CGRectMake(timeLabelRect.origin.x+250, timeLabelRect.origin.y+5, 15, 10);
+//    [cell addSubview:imgView2];
+    
+    
+    
+    
     // set cells' selection style
     UIView *customColorView = [[UIView alloc] init];
     customColorView.backgroundColor = [UIColor colorWithRed:73/255.0

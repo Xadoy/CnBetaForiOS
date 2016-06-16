@@ -17,7 +17,8 @@
 @property (nonatomic,strong) UIImage  *thumbImg;
 @property (nonatomic,strong) NSString *summary;
 @property (nonatomic,strong) NSString *pubTime;
-
+@property (nonatomic,strong) NSString *viewCounts;
+@property (nonatomic,strong) NSString *commentCounts;
 
 //-(NewsModel)getNews
 +(int)currentTimeStamp;
