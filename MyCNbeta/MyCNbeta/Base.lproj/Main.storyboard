@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -208,10 +209,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseC1" rowHeight="107" id="Lyy-hk-sg9" customClass="HotCommentTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="320" height="76"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lyy-hk-sg9" id="ddd-Sb-ckp">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXU-a8-sGe">
@@ -301,7 +302,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iP4-TF-QIA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pjg-ir-KtY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-wg-IQL">
@@ -447,16 +448,19 @@
         <!--设置-->
         <scene sceneID="vJX-vg-1ex">
             <objects>
-                <tableViewController id="GYY-KR-Fe4" sceneMemberID="viewController">
+                <tableViewController id="GYY-KR-Fe4" customClass="FourthViewTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="HDs-AE-nLT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="未实现的" id="YAY-IB-j8Z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="iax-cc-zcv">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iax-cc-zcv" id="g9G-ws-dYA">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="离线缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnM-5G-rJ7">
@@ -494,8 +498,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7ui-Il-yIN">
+                                        <rect key="frame" x="0.0" y="158" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ui-Il-yIN" id="AJW-ee-pm1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6t0-dD-FYQ">
@@ -523,10 +529,10 @@
                                                     <exclude reference="g9A-8U-gOq"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="xz5-v9-3aj"/>
-                                                    <exclude reference="zIz-RP-axZ"/>
                                                     <exclude reference="hIQ-3s-p8H"/>
                                                     <exclude reference="yhc-7b-UDa"/>
+                                                    <exclude reference="xz5-v9-3aj"/>
+                                                    <exclude reference="zIz-RP-axZ"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -535,17 +541,19 @@
                                                     <include reference="g9A-8U-gOq"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="xz5-v9-3aj"/>
-                                                    <include reference="zIz-RP-axZ"/>
                                                     <include reference="hIQ-3s-p8H"/>
                                                     <include reference="yhc-7b-UDa"/>
+                                                    <include reference="xz5-v9-3aj"/>
+                                                    <include reference="zIz-RP-axZ"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VG9-o6-0PV">
+                                        <rect key="frame" x="0.0" y="202" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VG9-o6-0PV" id="sgn-bw-8cW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-xl-Msv">
@@ -573,10 +581,10 @@
                                                     <exclude reference="Chs-p2-ymL"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="8fe-2x-Htb"/>
-                                                    <exclude reference="LMy-0D-rAe"/>
                                                     <exclude reference="F1a-Or-LP6"/>
                                                     <exclude reference="K0O-fj-hlQ"/>
+                                                    <exclude reference="8fe-2x-Htb"/>
+                                                    <exclude reference="LMy-0D-rAe"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -585,17 +593,19 @@
                                                     <include reference="Chs-p2-ymL"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="8fe-2x-Htb"/>
-                                                    <include reference="LMy-0D-rAe"/>
                                                     <include reference="F1a-Or-LP6"/>
                                                     <include reference="K0O-fj-hlQ"/>
+                                                    <include reference="8fe-2x-Htb"/>
+                                                    <include reference="LMy-0D-rAe"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AZH-FB-Kht">
+                                        <rect key="frame" x="0.0" y="246" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AZH-FB-Kht" id="2nq-wU-bhv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pc-7R-hdU">
@@ -626,10 +636,10 @@
                                                     <exclude reference="roB-IJ-V0s"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="bzE-VW-cwC"/>
-                                                    <exclude reference="tJi-6I-0x4"/>
                                                     <exclude reference="N9o-Fl-r1l"/>
                                                     <exclude reference="rSc-Mh-BIk"/>
+                                                    <exclude reference="bzE-VW-cwC"/>
+                                                    <exclude reference="tJi-6I-0x4"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -638,10 +648,10 @@
                                                     <include reference="roB-IJ-V0s"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="bzE-VW-cwC"/>
-                                                    <include reference="tJi-6I-0x4"/>
                                                     <include reference="N9o-Fl-r1l"/>
                                                     <include reference="rSc-Mh-BIk"/>
+                                                    <include reference="bzE-VW-cwC"/>
+                                                    <include reference="tJi-6I-0x4"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -651,8 +661,10 @@
                             <tableViewSection headerTitle="也是未实现的" id="obQ-Ey-i7J">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hCo-aA-bey">
+                                        <rect key="frame" x="0.0" y="341" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hCo-aA-bey" id="RRq-V7-9Kt">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1Q-Pz-uP5">
@@ -690,8 +702,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hOm-4U-Pa7">
+                                        <rect key="frame" x="0.0" y="385" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOm-4U-Pa7" id="Koq-pI-A7g">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反馈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-Rq-JGe">
@@ -729,8 +743,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="fIx-cq-rJY">
+                                        <rect key="frame" x="0.0" y="429" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fIx-cq-rJY" id="urF-ZI-Zs9">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgS-AW-zSY">

@@ -156,7 +156,6 @@
 		5481AD5A1D054B5200AAD286 /* WeiboShareViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5481ACE11D054B5200AAD286 /* WeiboShareViewController.nib */; };
 		5481AD5C1D05511400AAD286 /* ddddfault.png in Resources */ = {isa = PBXBuildFile; fileRef = 5481AD5B1D05511400AAD286 /* ddddfault.png */; };
 		5481AD611D055B3F00AAD286 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD601D055B3F00AAD286 /* NewsModel.m */; };
-		5481AD671D05630B00AAD286 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD661D05630B00AAD286 /* FourthViewController.m */; };
 		5481AD6C1D069F6200AAD286 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5481AD6B1D069F6200AAD286 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */; };
 		5481AD8C1D07EF6B00AAD286 /* FirstWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */; };
@@ -171,6 +170,7 @@
 		5496902E1D11568700097B91 /* commentsForCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902C1D11568700097B91 /* commentsForCell@2x.png */; };
 		549690311D11572700097B91 /* message7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902F1D11572700097B91 /* message7.png */; };
 		549690321D11572700097B91 /* message7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690301D11572700097B91 /* message7@2x.png */; };
+		549690361D124D6900097B91 /* FourthViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549690351D124D6900097B91 /* FourthViewTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,8 +378,6 @@
 		5481AD5B1D05511400AAD286 /* ddddfault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ddddfault.png; sourceTree = "<group>"; };
 		5481AD5F1D055B3F00AAD286 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		5481AD601D055B3F00AAD286 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
-		5481AD651D05630B00AAD286 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		5481AD661D05630B00AAD286 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		5481AD6B1D069F6200AAD286 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		5481AD811D07A68000AAD286 /* ThirdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTableViewCell.h; sourceTree = "<group>"; };
 		5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewCell.m; sourceTree = "<group>"; };
@@ -397,6 +395,8 @@
 		5496902C1D11568700097B91 /* commentsForCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "commentsForCell@2x.png"; sourceTree = "<group>"; };
 		5496902F1D11572700097B91 /* message7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message7.png; sourceTree = "<group>"; };
 		549690301D11572700097B91 /* message7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message7@2x.png"; sourceTree = "<group>"; };
+		549690341D124D6900097B91 /* FourthViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewTableViewController.h; sourceTree = "<group>"; };
+		549690351D124D6900097B91 /* FourthViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,17 +555,17 @@
 		5481AC301D052AFE00AAD286 /* MyCNbeta */ = {
 			isa = PBXGroup;
 			children = (
-				549690181D11257400097B91 /* ThirdView */,
-				5481AD5E1D055B1B00AAD286 /* Model */,
-				5481AC341D052AFE00AAD286 /* AppDelegate.h */,
-				5481AC351D052AFE00AAD286 /* AppDelegate.m */,
-				542CF79F1D0D31250086C66B /* SecondView */,
-				5481AD651D05630B00AAD286 /* FourthViewController.h */,
-				5481AD661D05630B00AAD286 /* FourthViewController.m */,
 				5481AC3D1D052AFE00AAD286 /* Main.storyboard */,
+				5481AD891D07EF3500AAD286 /* FirstView */,
+				542CF79F1D0D31250086C66B /* SecondView */,
+				549690181D11257400097B91 /* ThirdView */,
+				549690331D124D2A00097B91 /* FouthView */,
+				5481AD5E1D055B1B00AAD286 /* Model */,
 				5481AC401D052AFE00AAD286 /* Assets.xcassets */,
 				5481AC421D052AFE00AAD286 /* LaunchScreen.storyboard */,
 				5481AC451D052AFE00AAD286 /* Info.plist */,
+				5481AC341D052AFE00AAD286 /* AppDelegate.h */,
+				5481AC351D052AFE00AAD286 /* AppDelegate.m */,
 				542CF75F1D0D03750086C66B /* MJRefresh */,
 				5481AC671D054B5200AAD286 /* imgs */,
 				5481AC311D052AFE00AAD286 /* Supporting Files */,
@@ -748,7 +748,6 @@
 			children = (
 				5481AD5F1D055B3F00AAD286 /* NewsModel.h */,
 				5481AD601D055B3F00AAD286 /* NewsModel.m */,
-				5481AD891D07EF3500AAD286 /* FirstView */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -773,6 +772,15 @@
 				5496901D1D11273900097B91 /* ThirdViewController.m */,
 			);
 			name = ThirdView;
+			sourceTree = "<group>";
+		};
+		549690331D124D2A00097B91 /* FouthView */ = {
+			isa = PBXGroup;
+			children = (
+				549690341D124D6900097B91 /* FourthViewTableViewController.h */,
+				549690351D124D6900097B91 /* FourthViewTableViewController.m */,
+			);
+			name = FouthView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1065,6 +1073,7 @@
 				5481AC361D052AFE00AAD286 /* AppDelegate.m in Sources */,
 				542CF7981D0D03750086C66B /* MJRefreshNormalHeader.m in Sources */,
 				542CF7921D0D03750086C66B /* MJRefreshAutoNormalFooter.m in Sources */,
+				549690361D124D6900097B91 /* FourthViewTableViewController.m in Sources */,
 				542CF78D1D0D03750086C66B /* MJRefreshBackFooter.m in Sources */,
 				542CF7931D0D03750086C66B /* MJRefreshAutoStateFooter.m in Sources */,
 				542CF7971D0D03750086C66B /* MJRefreshGifHeader.m in Sources */,
@@ -1074,7 +1083,6 @@
 				542CF7AA1D0D44D60086C66B /* SecondTableViewController.m in Sources */,
 				542CF7941D0D03750086C66B /* MJRefreshBackGifFooter.m in Sources */,
 				542CF78E1D0D03750086C66B /* MJRefreshComponent.m in Sources */,
-				5481AD671D05630B00AAD286 /* FourthViewController.m in Sources */,
 				542CF7AD1D0D45CF0086C66B /* HotCommentTableViewCell.m in Sources */,
 				542CF7901D0D03750086C66B /* MJRefreshHeader.m in Sources */,
 				542CF7B01D0D47710086C66B /* HotCommentModel.m in Sources */,
