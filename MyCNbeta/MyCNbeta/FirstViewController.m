@@ -10,6 +10,7 @@
 #import "NewsModel.h"
 #import "ThirdTableViewCell.h"
 #import "MJRefresh.h"
+
 @interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray      *_newsArr;
@@ -42,10 +43,12 @@
     NSString *hometext = [temp objectForKey:@"hometext"];
     NSString *bodytext = [temp objectForKey:@"bodytext"];
     NSString *final = [hometext stringByAppendingString:bodytext];
+    NSString *sid = [temp objectForKey:@"sid"];
+    NSArray *arr = @[final,sid];
     //    NSString *final = noti.object;
     
     
-    [self performSegueWithIdentifier:@"cellSelected" sender:final];
+    [self performSegueWithIdentifier:@"cellSelected" sender:arr];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"htmlGetSuccess" object:nil];
     
 }
@@ -155,7 +158,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     UIViewController *temp = segue.destinationViewController;
     
-    [temp setValue:sender forKey:@"htmlString"];
+    [temp setValue:sender[0] forKey:@"htmlString"];
+    [temp setValue:sender[1] forKey:@"articleID"];
     
 }
 

@@ -18,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _webView.delegate = self;
+    _htmlString = [_htmlString stringByAppendingString:@"<br><br>"];
     [_webView loadHTMLString:_htmlString baseURL:nil];
     // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -48,7 +48,10 @@
     [webView stringByEvaluatingJavaScriptFromString:@"ResizeImages();"];
     
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UIViewController *vc = segue.destinationViewController;
+    [vc setValue:_articleID forKey:@"articleID"];
+}
 /*
 #pragma mark - Navigation
 

@@ -30,4 +30,6 @@
 +(void)getArticleAfterID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector;
 +(void)getTopTenNewsListWithReceiver:(id)targetID selector:(SEL)selector;
 +(void)getArticleWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector notificationName:(NSString*)notiName;//for override
++(NSString*)stringForCommentsListForArticleID:(NSString*)sid;
++(void)getCommentListWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector notiName:(NSString*)notiName;
 @end

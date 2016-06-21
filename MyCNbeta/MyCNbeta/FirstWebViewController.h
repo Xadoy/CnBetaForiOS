@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstWebViewController : UIViewController
+@property (nonatomic,strong) NSString* articleID;
 @property (nonatomic,strong) NSString* htmlString;
 @end

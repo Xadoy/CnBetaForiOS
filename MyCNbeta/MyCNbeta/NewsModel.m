@@ -7,7 +7,7 @@
 //
 
 #import "NewsModel.h"
-
+#import "AFNetworking/UIActivityIndicatorView+AFNetworking.h"
 @implementation NewsModel
 
 
@@ -52,7 +52,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:targetID selector:selector name:@"moreNewsGetSuccess" object:nil];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
+
     [manager GET:url parameters:nil
          success:^(NSURLSessionDataTask *task, id dic){
              NSLog(@"success --- ");
@@ -73,7 +73,6 @@
 //    AFHTTPResponseSerializer *temp = [AFHTTPResponseSerializer serializer];
 //    temp.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html" , nil];
 //    manager.requestSerializer = temp;
-    
     [manager GET:url parameters:nil
          success:^(NSURLSessionDataTask *task, id dic){
              NSLog(@"success --- ");
@@ -166,8 +165,22 @@
     NSLog(result);
     return result;
 }
++(NSString*)stringForCommentsListForArticleID:(NSString*)sid{
+    NSString *result = @"http://api.cnbeta.com/capi?";
+    //                                           app_key=10000&format=json&method=Article.Comment&page=&sid=&timestamp=&v=1.0&sign=
+    NSString *url = [NSString stringWithFormat:@"app_key=10000&article=%@&format=json&method=phone.Comment&timestamp=%d&v=1.0&",sid,[self currentTimeStamp]];
+    
+    NSString *temp = @"mpuffgvbvbttn3Rc";
+    temp = [self md5:[url stringByAppendingString:temp]];
+    
+    url = [url stringByAppendingString:[NSString stringWithFormat:@"sign=%@",temp]];
+    result = [result stringByAppendingString:url];
+    NSLog(result);
+    return result;
+}
 
 +(NSString*)stringForTopTenNewsList{
+   
     NSString *result = @"http://api.cnbeta.com/capi?";
     //app_key=10000&format=json&method=Article.Top10&timestamp=v=1.0&sign=
     NSString *url = [NSString stringWithFormat:@"app_key=10000&format=json&method=Article.Top10&timestamp=%dv=1.0&",[self currentTimeStamp]];
@@ -228,6 +241,29 @@
     
     return modelsArr;
 }
+
++(void)getCommentListWithID:(NSString*)sid Receiver:(id)targetID selector:(SEL)selector notiName:(NSString*)notiName{
+    NSString *url = [self stringForCommentsListForArticleID:sid];
+    [[NSNotificationCenter defaultCenter]addObserver:targetID selector:selector name:notiName object:nil];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //    AFHTTPResponseSerializer *temp = [AFHTTPResponseSerializer serializer];
+    //    temp.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html" , nil];
+    //    manager.requestSerializer = temp;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+    [manager GET:url parameters:nil
+         success:^(NSURLSessionDataTask *task, id dic){
+             NSLog(@"success --- ");
+             [[NSNotificationCenter defaultCenter]postNotificationName:notiName object:dic];
+             
+         }
+         failure:^(NSURLSessionDataTask *task, NSError *error){
+             NSLog(@"fail");
+             NSLog(@"%@",error);
+         }];
+}
+
+
 
 //+(NSString*)omg{
 //    char chain[]="qwertyuiopasdfghjklzxcvbnm";

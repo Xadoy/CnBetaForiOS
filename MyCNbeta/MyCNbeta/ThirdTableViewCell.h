@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TriangleView.h"
 @interface ThirdTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *thumbImg;
 @property (weak, nonatomic) IBOutlet UILabel *summaryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *viewCountsLabel;
-@property (strong,nonatomic)  UIView           *barView;
+@property (strong,nonatomic) TriangleView    *barView;
 
 @property (weak, nonatomic) IBOutlet UILabel *commentCountsLabel;
 

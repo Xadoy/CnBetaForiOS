@@ -171,6 +171,16 @@
 		549690311D11572700097B91 /* message7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5496902F1D11572700097B91 /* message7.png */; };
 		549690321D11572700097B91 /* message7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690301D11572700097B91 /* message7@2x.png */; };
 		549690361D124D6900097B91 /* FourthViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549690351D124D6900097B91 /* FourthViewTableViewController.m */; };
+		5496903A1D128D1400097B91 /* CommentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549690391D128D1400097B91 /* CommentsTableViewController.m */; };
+		5496903E1D12A5CA00097B91 /* CommentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496903D1D12A5CA00097B91 /* CommentsModel.m */; };
+		549690411D1389BB00097B91 /* CommentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 549690401D1389BB00097B91 /* CommentsTableViewCell.m */; };
+		549690441D1391C000097B91 /* profilePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690421D1391C000097B91 /* profilePic.png */; };
+		549690451D1391C000097B91 /* profilePic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690431D1391C000097B91 /* profilePic@2x.png */; };
+		5496904A1D13A59B00097B91 /* dislike.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690461D13A59B00097B91 /* dislike.png */; };
+		5496904B1D13A59B00097B91 /* dislike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690471D13A59B00097B91 /* dislike@2x.png */; };
+		5496904C1D13A59B00097B91 /* like16.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690481D13A59B00097B91 /* like16.png */; };
+		5496904D1D13A59B00097B91 /* like16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690491D13A59B00097B91 /* like16@2x.png */; };
+		549690501D1776BF00097B91 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496904F1D1776BF00097B91 /* TriangleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -397,6 +407,20 @@
 		549690301D11572700097B91 /* message7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message7@2x.png"; sourceTree = "<group>"; };
 		549690341D124D6900097B91 /* FourthViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewTableViewController.h; sourceTree = "<group>"; };
 		549690351D124D6900097B91 /* FourthViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewTableViewController.m; sourceTree = "<group>"; };
+		549690381D128D1400097B91 /* CommentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewController.h; sourceTree = "<group>"; };
+		549690391D128D1400097B91 /* CommentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewController.m; sourceTree = "<group>"; };
+		5496903C1D12A5CA00097B91 /* CommentsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsModel.h; sourceTree = "<group>"; };
+		5496903D1D12A5CA00097B91 /* CommentsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsModel.m; sourceTree = "<group>"; };
+		5496903F1D1389BB00097B91 /* CommentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewCell.h; sourceTree = "<group>"; };
+		549690401D1389BB00097B91 /* CommentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewCell.m; sourceTree = "<group>"; };
+		549690421D1391C000097B91 /* profilePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePic.png; sourceTree = "<group>"; };
+		549690431D1391C000097B91 /* profilePic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profilePic@2x.png"; sourceTree = "<group>"; };
+		549690461D13A59B00097B91 /* dislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dislike.png; sourceTree = "<group>"; };
+		549690471D13A59B00097B91 /* dislike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dislike@2x.png"; sourceTree = "<group>"; };
+		549690481D13A59B00097B91 /* like16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like16.png; sourceTree = "<group>"; };
+		549690491D13A59B00097B91 /* like16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like16@2x.png"; sourceTree = "<group>"; };
+		5496904E1D1776BF00097B91 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		5496904F1D1776BF00097B91 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,8 +549,6 @@
 				542CF7A91D0D44D60086C66B /* SecondTableViewController.m */,
 				542CF7AB1D0D45CF0086C66B /* HotCommentTableViewCell.h */,
 				542CF7AC1D0D45CF0086C66B /* HotCommentTableViewCell.m */,
-				542CF7AE1D0D47710086C66B /* HotCommentModel.h */,
-				542CF7AF1D0D47710086C66B /* HotCommentModel.m */,
 			);
 			name = SecondView;
 			sourceTree = "<group>";
@@ -556,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				5481AC3D1D052AFE00AAD286 /* Main.storyboard */,
+				549690371D12836200097B91 /* Contents */,
 				5481AD891D07EF3500AAD286 /* FirstView */,
 				542CF79F1D0D31250086C66B /* SecondView */,
 				549690181D11257400097B91 /* ThirdView */,
@@ -602,6 +625,12 @@
 		5481AC671D054B5200AAD286 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				549690461D13A59B00097B91 /* dislike.png */,
+				549690471D13A59B00097B91 /* dislike@2x.png */,
+				549690481D13A59B00097B91 /* like16.png */,
+				549690491D13A59B00097B91 /* like16@2x.png */,
+				549690421D1391C000097B91 /* profilePic.png */,
+				549690431D1391C000097B91 /* profilePic@2x.png */,
 				5496902F1D11572700097B91 /* message7.png */,
 				549690301D11572700097B91 /* message7@2x.png */,
 				5496902B1D11568700097B91 /* commentsForCell.png */,
@@ -746,8 +775,12 @@
 		5481AD5E1D055B1B00AAD286 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				542CF7AE1D0D47710086C66B /* HotCommentModel.h */,
+				542CF7AF1D0D47710086C66B /* HotCommentModel.m */,
 				5481AD5F1D055B3F00AAD286 /* NewsModel.h */,
 				5481AD601D055B3F00AAD286 /* NewsModel.m */,
+				5496903C1D12A5CA00097B91 /* CommentsModel.h */,
+				5496903D1D12A5CA00097B91 /* CommentsModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -759,8 +792,6 @@
 				5481AC381D052AFE00AAD286 /* FirstViewController.m */,
 				5481AD811D07A68000AAD286 /* ThirdTableViewCell.h */,
 				5481AD821D07A68000AAD286 /* ThirdTableViewCell.m */,
-				5481AD8A1D07EF6B00AAD286 /* FirstWebViewController.h */,
-				5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */,
 			);
 			name = FirstView;
 			sourceTree = "<group>";
@@ -770,6 +801,8 @@
 			children = (
 				5496901C1D11273900097B91 /* ThirdViewController.h */,
 				5496901D1D11273900097B91 /* ThirdViewController.m */,
+				5496904E1D1776BF00097B91 /* TriangleView.h */,
+				5496904F1D1776BF00097B91 /* TriangleView.m */,
 			);
 			name = ThirdView;
 			sourceTree = "<group>";
@@ -781,6 +814,19 @@
 				549690351D124D6900097B91 /* FourthViewTableViewController.m */,
 			);
 			name = FouthView;
+			sourceTree = "<group>";
+		};
+		549690371D12836200097B91 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				5481AD8A1D07EF6B00AAD286 /* FirstWebViewController.h */,
+				5481AD8B1D07EF6B00AAD286 /* FirstWebViewController.m */,
+				549690381D128D1400097B91 /* CommentsTableViewController.h */,
+				549690391D128D1400097B91 /* CommentsTableViewController.m */,
+				5496903F1D1389BB00097B91 /* CommentsTableViewCell.h */,
+				549690401D1389BB00097B91 /* CommentsTableViewCell.m */,
+			);
+			name = Contents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -931,11 +977,13 @@
 				5481AD2F1D054B5200AAD286 /* LightBoxViewController.nib in Resources */,
 				5481AD191D054B5200AAD286 /* HMCommentCellSelected@2x.png in Resources */,
 				5481AD011D054B5200AAD286 /* cellbg.png in Resources */,
+				5496904A1D13A59B00097B91 /* dislike.png in Resources */,
 				5481ACFF1D054B5200AAD286 /* cbTabBarNews.png in Resources */,
 				5481AD1B1D054B5200AAD286 /* hmtabbar@2x.png in Resources */,
 				5481AD271D054B5200AAD286 /* Info.plist in Resources */,
 				5481ACEA1D054B5200AAD286 /* arrow-back.png in Resources */,
 				542CF79A1D0D03750086C66B /* MJRefresh.bundle in Resources */,
+				5496904B1D13A59B00097B91 /* dislike@2x.png in Resources */,
 				5481AD021D054B5200AAD286 /* cellbg@2x.png in Resources */,
 				5481ACE41D054B5200AAD286 /* ajax-loader.gif in Resources */,
 				5481AD101D054B5200AAD286 /* Default.png in Resources */,
@@ -944,6 +992,7 @@
 				5481AD201D054B5200AAD286 /* hudsupport.png in Resources */,
 				5481ACF71D054B5200AAD286 /* cbaboutios.png in Resources */,
 				5481AD1D1D054B5200AAD286 /* hotSection@2x.png in Resources */,
+				549690451D1391C000097B91 /* profilePic@2x.png in Resources */,
 				5481AD171D054B5200AAD286 /* hitCounterIcon@2x.png in Resources */,
 				5481AD431D054B5200AAD286 /* PkgInfo in Resources */,
 				5481AD4C1D054B5200AAD286 /* shadow-up.png in Resources */,
@@ -964,6 +1013,7 @@
 				5481ACEC1D054B5200AAD286 /* arrow-down.png in Resources */,
 				5481AD5C1D05511400AAD286 /* ddddfault.png in Resources */,
 				5481AD341D054B5200AAD286 /* navigationBarBackButton@2x.png in Resources */,
+				549690441D1391C000097B91 /* profilePic.png in Resources */,
 				5481AC411D052AFE00AAD286 /* Assets.xcassets in Resources */,
 				5481AD1C1D054B5200AAD286 /* hotSection.png in Resources */,
 				5481ACF11D054B5200AAD286 /* arrow-up@2x.png in Resources */,
@@ -999,6 +1049,7 @@
 				5481AD121D054B5200AAD286 /* devicon.png in Resources */,
 				5496902E1D11568700097B91 /* commentsForCell@2x.png in Resources */,
 				5481AD511D054B5200AAD286 /* TopTen@2x.png in Resources */,
+				5496904D1D13A59B00097B91 /* like16@2x.png in Resources */,
 				5481AD291D054B5200AAD286 /* LaunchImage-2-568h@2x.png in Resources */,
 				5481AD571D054B5200AAD286 /* watermark.png in Resources */,
 				5481AD501D054B5200AAD286 /* TopTen.png in Resources */,
@@ -1009,6 +1060,7 @@
 				5481AD541D054B5200AAD286 /* TopTenItem.nib in Resources */,
 				5496902A1D114B6B00097B91 /* eye_24@2x.png in Resources */,
 				5481AD081D054B5200AAD286 /* cmtbg@2x.png in Resources */,
+				5496904C1D13A59B00097B91 /* like16.png in Resources */,
 				5481AD3D1D054B5200AAD286 /* newsListCellBackground.png in Resources */,
 				5481AD141D054B5200AAD286 /* Entitlements.plist in Resources */,
 				5481AD261D054B5200AAD286 /* imgpholder@2x.png in Resources */,
@@ -1069,6 +1121,7 @@
 				5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */,
 				542CF79D1D0D03750086C66B /* UIScrollView+MJRefresh.m in Sources */,
 				5496901E1D11273900097B91 /* ThirdViewController.m in Sources */,
+				5496903E1D12A5CA00097B91 /* CommentsModel.m in Sources */,
 				542CF7951D0D03750086C66B /* MJRefreshBackNormalFooter.m in Sources */,
 				5481AC361D052AFE00AAD286 /* AppDelegate.m in Sources */,
 				542CF7981D0D03750086C66B /* MJRefreshNormalHeader.m in Sources */,
@@ -1085,12 +1138,15 @@
 				542CF78E1D0D03750086C66B /* MJRefreshComponent.m in Sources */,
 				542CF7AD1D0D45CF0086C66B /* HotCommentTableViewCell.m in Sources */,
 				542CF7901D0D03750086C66B /* MJRefreshHeader.m in Sources */,
+				5496903A1D128D1400097B91 /* CommentsTableViewController.m in Sources */,
 				542CF7B01D0D47710086C66B /* HotCommentModel.m in Sources */,
 				5481AC331D052AFE00AAD286 /* main.m in Sources */,
+				549690411D1389BB00097B91 /* CommentsTableViewCell.m in Sources */,
 				542CF78C1D0D03750086C66B /* MJRefreshAutoFooter.m in Sources */,
 				542CF78F1D0D03750086C66B /* MJRefreshFooter.m in Sources */,
 				542CF7961D0D03750086C66B /* MJRefreshBackStateFooter.m in Sources */,
 				542CF79B1D0D03750086C66B /* MJRefreshConst.m in Sources */,
+				549690501D1776BF00097B91 /* TriangleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

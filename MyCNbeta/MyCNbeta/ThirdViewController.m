@@ -94,14 +94,21 @@
     cell.viewCountsLabel.text = (temp.viewCounts.length<5)?temp.viewCounts:@"9999+";
     cell.commentCountsLabel.text = (temp.commentCounts.length<5)?temp.commentCounts:@"9999+";
     
-
+    CGFloat colorCode= (CGFloat)(0.1*row);
+    UIColor *color = [UIColor colorWithRed:1.0 green:colorCode blue:0 alpha:1];
     [cell pleaseAddBarViewForRow:row];
+    
+    
+    
+    cell.barView.triangleColor = color;
+    [cell.barView setNeedsDisplay];
     // set cells' selection style
     UIView *customColorView = [[UIView alloc] init];
-    customColorView.backgroundColor = [UIColor colorWithRed:73/255.0
-                                                      green:101/255.0
-                                                       blue:225/255.0
-                                                      alpha:1];
+//    customColorView.backgroundColor = [UIColor colorWithRed:73/255.0
+//                                                      green:101/255.0
+//                                                       blue:225/255.0
+//                                                      alpha:1];
+    customColorView.backgroundColor = color;
     cell.selectedBackgroundView =  customColorView;
     
     

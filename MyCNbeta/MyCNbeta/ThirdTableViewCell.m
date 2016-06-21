@@ -7,11 +7,12 @@
 //
 
 #import "ThirdTableViewCell.h"
+
 #define SCREENWIDTH 320.0
 @implementation ThirdTableViewCell
 
 - (void)awakeFromNib {
-    
+
     // Initialization code
 }
 
@@ -40,17 +41,20 @@
 //    
 //}
 -(void) pleaseAddBarViewForRow:(NSInteger)row{
-    CGFloat width = SCREENWIDTH-(row)/10.0*280.0;
-//    CGFloat x     = (SCREENWIDTH - width)/2.0;
-    CGFloat colorCode= (CGFloat)(0.1*row);
+//    CGFloat width = SCREENWIDTH-(row)/10.0*280.0;
+http://api.cnbeta.com/capi?app_key=10000&content=&format=json&method=Article.DoCmt&op=publish&sid=&timestamp=&v=1.0&sign=
+
     if(!_barView){
-        _barView = [[UIView alloc]init];
-        _barView.backgroundColor = [UIColor colorWithRed:1.0 green:colorCode blue:0 alpha:1];
+        _barView = [[TriangleView alloc]init];
+        _barView.backgroundColor = [UIColor whiteColor];
+        _barView.frame = CGRectMake(0, 1.5,SCREENWIDTH , self.frame.size.height-3);
+//        _barView.triangleColor = [UIColor colorWithRed:1.0 green:colorCode blue:0 alpha:1];
         [self addSubview:_barView];
+        [self sendSubviewToBack:_barView];
     }
-    _barView.frame = CGRectMake(0, 0,width , 6);
-    _barView.backgroundColor = [UIColor colorWithRed:1.0 green:colorCode blue:0 alpha:1];
+
 }
+
 
 
 @end
