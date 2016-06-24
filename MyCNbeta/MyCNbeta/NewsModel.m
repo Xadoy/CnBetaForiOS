@@ -30,15 +30,7 @@
             
             result[8],result[9],result[10],result[11],
             
-            result[12],result[13],result[14],result[15],
-            
-            result[16], result[17],result[18], result[19],
-            
-            result[20], result[21],result[22], result[23],
-            
-            result[24], result[25],result[26], result[27],
-            
-            result[28], result[29],result[30], result[31]];
+            result[12],result[13],result[14],result[15]];
     
 }
 
@@ -232,8 +224,8 @@
         aNewsModel.pubTime = [info objectForKey:@"pubtime"];
         aNewsModel.viewCounts = [info objectForKey:@"counter"];
         aNewsModel.commentCounts = [info objectForKey:@"comments"];
-        UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[info objectForKey:@"thumb"]]]];
-        aNewsModel.thumbImg = img;
+
+        aNewsModel.thumbImgUrlString = [info objectForKey:@"thumb"];
         
         [modelsArr addObject:aNewsModel];
     }

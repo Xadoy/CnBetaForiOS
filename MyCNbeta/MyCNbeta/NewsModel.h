@@ -14,11 +14,11 @@
 
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) NSString *articleID;
-@property (nonatomic,strong) UIImage  *thumbImg;
 @property (nonatomic,strong) NSString *summary;
 @property (nonatomic,strong) NSString *pubTime;
 @property (nonatomic,strong) NSString *viewCounts;
 @property (nonatomic,strong) NSString *commentCounts;
+@property (nonatomic,strong) NSString *thumbImgUrlString;
 
 //-(NewsModel)getNews
 +(int)currentTimeStamp;

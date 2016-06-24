@@ -181,6 +181,13 @@
 		5496904C1D13A59B00097B91 /* like16.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690481D13A59B00097B91 /* like16.png */; };
 		5496904D1D13A59B00097B91 /* like16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 549690491D13A59B00097B91 /* like16@2x.png */; };
 		549690501D1776BF00097B91 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496904F1D1776BF00097B91 /* TriangleView.m */; };
+		549690661D1A5E7500097B91 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 549690641D1A5E7300097B91 /* Model.xcdatamodeld */; };
+		54DCCACB1D1A681D00C52E50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DCCACA1D1A681D00C52E50 /* CoreData.framework */; };
+		54DCCAD51D1A6ADC00C52E50 /* CoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCCAD41D1A6ADC00C52E50 /* CoreDataDAO.m */; };
+		54DCCAD81D1B6F0E00C52E50 /* NewsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCCAD71D1B6F0E00C52E50 /* NewsDAO.m */; };
+		54DCCADB1D1B6F8C00C52E50 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCCADA1D1B6F8C00C52E50 /* News.m */; };
+		54DCCAE01D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCCADD1D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.m */; };
+		54DCCAE11D1B74BE00C52E50 /* NewsManagerdObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCCADF1D1B74BE00C52E50 /* NewsManagerdObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,6 +428,18 @@
 		549690491D13A59B00097B91 /* like16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like16@2x.png"; sourceTree = "<group>"; };
 		5496904E1D1776BF00097B91 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		5496904F1D1776BF00097B91 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		549690651D1A5E7400097B91 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		54DCCACA1D1A681D00C52E50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		54DCCAD31D1A6ADC00C52E50 /* CoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDAO.h; sourceTree = "<group>"; };
+		54DCCAD41D1A6ADC00C52E50 /* CoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDAO.m; sourceTree = "<group>"; };
+		54DCCAD61D1B6F0E00C52E50 /* NewsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDAO.h; sourceTree = "<group>"; };
+		54DCCAD71D1B6F0E00C52E50 /* NewsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDAO.m; sourceTree = "<group>"; };
+		54DCCAD91D1B6F8C00C52E50 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		54DCCADA1D1B6F8C00C52E50 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		54DCCADC1D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewsManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		54DCCADD1D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NewsManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		54DCCADE1D1B74BE00C52E50 /* NewsManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsManagedObject.h; sourceTree = "<group>"; };
+		54DCCADF1D1B74BE00C52E50 /* NewsManagerdObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsManagerdObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +447,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DCCACB1D1A681D00C52E50 /* CoreData.framework in Frameworks */,
 				5481AD6C1D069F6200AAD286 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +576,7 @@
 		5481AC251D052AFE00AAD286 = {
 			isa = PBXGroup;
 			children = (
+				54DCCACA1D1A681D00C52E50 /* CoreData.framework */,
 				5481AC301D052AFE00AAD286 /* MyCNbeta */,
 				5481AC4D1D052AFE00AAD286 /* MyCNbetaTests */,
 				5481AC581D052AFE00AAD286 /* MyCNbetaUITests */,
@@ -577,6 +598,7 @@
 		5481AC301D052AFE00AAD286 /* MyCNbeta */ = {
 			isa = PBXGroup;
 			children = (
+				54DCCACC1D1A686D00C52E50 /* persistenceLayer */,
 				5481AC3D1D052AFE00AAD286 /* Main.storyboard */,
 				549690371D12836200097B91 /* Contents */,
 				5481AD891D07EF3500AAD286 /* FirstView */,
@@ -600,6 +622,7 @@
 			isa = PBXGroup;
 			children = (
 				5481AC321D052AFE00AAD286 /* main.m */,
+				549690641D1A5E7300097B91 /* Model.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -781,6 +804,12 @@
 				5481AD601D055B3F00AAD286 /* NewsModel.m */,
 				5496903C1D12A5CA00097B91 /* CommentsModel.h */,
 				5496903D1D12A5CA00097B91 /* CommentsModel.m */,
+				54DCCAD31D1A6ADC00C52E50 /* CoreDataDAO.h */,
+				54DCCAD41D1A6ADC00C52E50 /* CoreDataDAO.m */,
+				54DCCAD61D1B6F0E00C52E50 /* NewsDAO.h */,
+				54DCCAD71D1B6F0E00C52E50 /* NewsDAO.m */,
+				54DCCAD91D1B6F8C00C52E50 /* News.h */,
+				54DCCADA1D1B6F8C00C52E50 /* News.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -827,6 +856,17 @@
 				549690401D1389BB00097B91 /* CommentsTableViewCell.m */,
 			);
 			name = Contents;
+			sourceTree = "<group>";
+		};
+		54DCCACC1D1A686D00C52E50 /* persistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				54DCCADC1D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.h */,
+				54DCCADD1D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.m */,
+				54DCCADE1D1B74BE00C52E50 /* NewsManagedObject.h */,
+				54DCCADF1D1B74BE00C52E50 /* NewsManagerdObject.m */,
+			);
+			name = persistenceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1114,14 +1154,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DCCAE11D1B74BE00C52E50 /* NewsManagerdObject.m in Sources */,
 				5481AD611D055B3F00AAD286 /* NewsModel.m in Sources */,
 				542CF7991D0D03750086C66B /* MJRefreshStateHeader.m in Sources */,
+				54DCCADB1D1B6F8C00C52E50 /* News.m in Sources */,
 				542CF79E1D0D03750086C66B /* UIView+MJExtension.m in Sources */,
 				5481AD8C1D07EF6B00AAD286 /* FirstWebViewController.m in Sources */,
 				5481AD831D07A68000AAD286 /* ThirdTableViewCell.m in Sources */,
+				54DCCAE01D1B74BE00C52E50 /* NewsManagedObject+CoreDataProperties.m in Sources */,
 				542CF79D1D0D03750086C66B /* UIScrollView+MJRefresh.m in Sources */,
 				5496901E1D11273900097B91 /* ThirdViewController.m in Sources */,
 				5496903E1D12A5CA00097B91 /* CommentsModel.m in Sources */,
+				54DCCAD51D1A6ADC00C52E50 /* CoreDataDAO.m in Sources */,
 				542CF7951D0D03750086C66B /* MJRefreshBackNormalFooter.m in Sources */,
 				5481AC361D052AFE00AAD286 /* AppDelegate.m in Sources */,
 				542CF7981D0D03750086C66B /* MJRefreshNormalHeader.m in Sources */,
@@ -1138,7 +1182,9 @@
 				542CF78E1D0D03750086C66B /* MJRefreshComponent.m in Sources */,
 				542CF7AD1D0D45CF0086C66B /* HotCommentTableViewCell.m in Sources */,
 				542CF7901D0D03750086C66B /* MJRefreshHeader.m in Sources */,
+				54DCCAD81D1B6F0E00C52E50 /* NewsDAO.m in Sources */,
 				5496903A1D128D1400097B91 /* CommentsTableViewController.m in Sources */,
+				549690661D1A5E7500097B91 /* Model.xcdatamodeld in Sources */,
 				542CF7B01D0D47710086C66B /* HotCommentModel.m in Sources */,
 				5481AC331D052AFE00AAD286 /* main.m in Sources */,
 				549690411D1389BB00097B91 /* CommentsTableViewCell.m in Sources */,
@@ -1408,6 +1454,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		549690641D1A5E7300097B91 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				549690651D1A5E7400097B91 /* Model.xcdatamodel */,
+			);
+			currentVersion = 549690651D1A5E7400097B91 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5481AC261D052AFE00AAD286 /* Project object */;
 }

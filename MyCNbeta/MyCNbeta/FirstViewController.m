@@ -23,7 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
 //    NSLog(@"%@",[NewsModel stringForNewsList]);
 
     
@@ -98,8 +97,8 @@
     NSUInteger row = [indexPath row];
     NewsModel *temp = _newsArr[row];
     cell.titleLabel.text =temp.title;
-    
-    cell.thumbImg.image = temp.thumbImg;
+    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
+    cell.thumbImg.image = img;
     cell.summaryLabel.text = temp.summary;
     cell.timeLabel.text = temp.pubTime;
     

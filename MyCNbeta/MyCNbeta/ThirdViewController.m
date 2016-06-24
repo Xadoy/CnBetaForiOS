@@ -87,7 +87,8 @@
     NSString *title = [NSString stringWithFormat:@"%d. %@",row+1,temp.title];
     cell.titleLabel.text =title;
     
-    cell.thumbImg.image = temp.thumbImg;
+    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
+    cell.thumbImg.image = img;
     cell.summaryLabel.text = temp.summary;
     cell.timeLabel.text = temp.pubTime;
     //view counts and comments
