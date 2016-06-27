@@ -16,5 +16,5 @@ This is a reader for CnBeta. Just for fun.<br />
 ![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdImgs/screenshot6.png)
 
 
-######'声明:'
-*此app仅用于本人学习ios开发，如有侵权请告知，将立即删除。
+###`声明:`
+* 此app仅用于本人学习ios开发，用了cnbeta的api以及一些图片素材，如有侵权请告知，将立即删除。
