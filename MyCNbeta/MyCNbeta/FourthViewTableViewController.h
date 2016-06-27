@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <WebImage/SDImageCache.h>
 @interface FourthViewTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UILabel *cacheSizeLabel;
 
 @end

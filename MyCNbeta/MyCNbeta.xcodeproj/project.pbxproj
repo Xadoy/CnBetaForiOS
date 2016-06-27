@@ -29,6 +29,11 @@
 		542CF7AA1D0D44D60086C66B /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CF7A91D0D44D60086C66B /* SecondTableViewController.m */; };
 		542CF7AD1D0D45CF0086C66B /* HotCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CF7AC1D0D45CF0086C66B /* HotCommentTableViewCell.m */; };
 		542CF7B01D0D47710086C66B /* HotCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542CF7AF1D0D47710086C66B /* HotCommentModel.m */; };
+		544106ED1D20B134005FC4F6 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544106EC1D20B134005FC4F6 /* WebImage.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		544106EE1D20B7F6005FC4F6 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544106EC1D20B134005FC4F6 /* WebImage.framework */; };
+		544106EF1D20B7F6005FC4F6 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 544106EC1D20B134005FC4F6 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		544106F51D20D0EA005FC4F6 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 544106F21D20D0EA005FC4F6 /* ProgressHUD.bundle */; };
+		544106F61D20D0EA005FC4F6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 544106F41D20D0EA005FC4F6 /* ProgressHUD.m */; };
 		5481AC331D052AFE00AAD286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AC321D052AFE00AAD286 /* main.m */; };
 		5481AC361D052AFE00AAD286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AC351D052AFE00AAD286 /* AppDelegate.m */; };
 		5481AC391D052AFE00AAD286 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481AC381D052AFE00AAD286 /* FirstViewController.m */; };
@@ -214,6 +219,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		544106F01D20B7F6005FC4F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				544106EF1D20B7F6005FC4F6 /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		542CF7611D0D03750086C66B /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		542CF7621D0D03750086C66B /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -259,6 +278,10 @@
 		542CF7AC1D0D45CF0086C66B /* HotCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCommentTableViewCell.m; sourceTree = "<group>"; };
 		542CF7AE1D0D47710086C66B /* HotCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCommentModel.h; sourceTree = "<group>"; };
 		542CF7AF1D0D47710086C66B /* HotCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCommentModel.m; sourceTree = "<group>"; };
+		544106EC1D20B134005FC4F6 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		544106F21D20D0EA005FC4F6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		544106F31D20D0EA005FC4F6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		544106F41D20D0EA005FC4F6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		5481AC2E1D052AFE00AAD286 /* MyCNbeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCNbeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5481AC321D052AFE00AAD286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5481AC341D052AFE00AAD286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -447,8 +470,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544106ED1D20B134005FC4F6 /* WebImage.framework in Frameworks */,
 				54DCCACB1D1A681D00C52E50 /* CoreData.framework in Frameworks */,
 				5481AD6C1D069F6200AAD286 /* AFNetworking.framework in Frameworks */,
+				544106EE1D20B7F6005FC4F6 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,9 +598,21 @@
 			name = SecondView;
 			sourceTree = "<group>";
 		};
+		544106F11D20D0EA005FC4F6 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				544106F21D20D0EA005FC4F6 /* ProgressHUD.bundle */,
+				544106F31D20D0EA005FC4F6 /* ProgressHUD.h */,
+				544106F41D20D0EA005FC4F6 /* ProgressHUD.m */,
+			);
+			name = ProgressHUD;
+			path = "../../../../ProgressHUD-master/ProgressHUD/ProgressHUD";
+			sourceTree = "<group>";
+		};
 		5481AC251D052AFE00AAD286 = {
 			isa = PBXGroup;
 			children = (
+				544106EC1D20B134005FC4F6 /* WebImage.framework */,
 				54DCCACA1D1A681D00C52E50 /* CoreData.framework */,
 				5481AC301D052AFE00AAD286 /* MyCNbeta */,
 				5481AC4D1D052AFE00AAD286 /* MyCNbetaTests */,
@@ -598,8 +635,8 @@
 		5481AC301D052AFE00AAD286 /* MyCNbeta */ = {
 			isa = PBXGroup;
 			children = (
-				54DCCACC1D1A686D00C52E50 /* persistenceLayer */,
 				5481AC3D1D052AFE00AAD286 /* Main.storyboard */,
+				54DCCACC1D1A686D00C52E50 /* persistenceLayer */,
 				549690371D12836200097B91 /* Contents */,
 				5481AD891D07EF3500AAD286 /* FirstView */,
 				542CF79F1D0D31250086C66B /* SecondView */,
@@ -611,6 +648,7 @@
 				5481AC451D052AFE00AAD286 /* Info.plist */,
 				5481AC341D052AFE00AAD286 /* AppDelegate.h */,
 				5481AC351D052AFE00AAD286 /* AppDelegate.m */,
+				544106F11D20D0EA005FC4F6 /* ProgressHUD */,
 				542CF75F1D0D03750086C66B /* MJRefresh */,
 				5481AC671D054B5200AAD286 /* imgs */,
 				5481AC311D052AFE00AAD286 /* Supporting Files */,
@@ -880,6 +918,7 @@
 				5481AC2B1D052AFE00AAD286 /* Frameworks */,
 				5481AC2C1D052AFE00AAD286 /* Resources */,
 				5481AD701D06A47500AAD286 /* ShellScript */,
+				544106F01D20B7F6005FC4F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1112,6 +1151,7 @@
 				5481AC3F1D052AFE00AAD286 /* Main.storyboard in Resources */,
 				5481AD071D054B5200AAD286 /* cmtbg.png in Resources */,
 				5481ACF51D054B5200AAD286 /* blueArrow@2x.png in Resources */,
+				544106F51D20D0EA005FC4F6 /* ProgressHUD.bundle in Resources */,
 				5481AD2C1D054B5200AAD286 /* LaunchImage-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1176,6 +1216,7 @@
 				542CF7971D0D03750086C66B /* MJRefreshGifHeader.m in Sources */,
 				542CF7911D0D03750086C66B /* MJRefreshAutoGifFooter.m in Sources */,
 				542CF79C1D0D03750086C66B /* UIScrollView+MJExtension.m in Sources */,
+				544106F61D20D0EA005FC4F6 /* ProgressHUD.m in Sources */,
 				5481AC391D052AFE00AAD286 /* FirstViewController.m in Sources */,
 				542CF7AA1D0D44D60086C66B /* SecondTableViewController.m in Sources */,
 				542CF7941D0D03750086C66B /* MJRefreshBackGifFooter.m in Sources */,

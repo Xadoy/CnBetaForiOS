@@ -223,11 +223,11 @@
     float time = [[dict objectForKey:UIKeyboardAnimationDurationUserInfoKey]floatValue];
     NSValue *number = [dict objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect rect = [number CGRectValue];
-    
+    CGRect test = CGRectMake(0, rect.origin.y-50, _inputView.frame.size.width, 50);
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:time];
     [UIView setAnimationCurve:curve];
-    _inputView.frame = CGRectMake(0, rect.origin.y-50, _inputView.frame.size.width, 50);
+    _inputView.frame = test;
 //    _tableView.frame = CGRectMake(0, 64, _tableView.frame.size.width, _inputView.frame.origin.y-64);
     [UIView commitAnimations];
 }

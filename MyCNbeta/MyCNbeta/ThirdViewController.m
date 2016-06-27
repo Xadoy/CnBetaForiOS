@@ -10,7 +10,8 @@
 #import "NewsModel.h"
 #import "ThirdTableViewCell.h"
 #import "MJRefresh.h"
-#define SCREENWIDTH 320.0
+#import <WebImage/UIImageView+WebCache.h>
+#define SCREENWIDTH [[UIScreen mainScreen]bounds].size.width
 @interface ThirdViewController ()
 
 {
@@ -87,8 +88,9 @@
     NSString *title = [NSString stringWithFormat:@"%d. %@",row+1,temp.title];
     cell.titleLabel.text =title;
     
-    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
-    cell.thumbImg.image = img;
+//    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
+//    cell.thumbImg.image = img;
+    [cell.thumbImg sd_setImageWithURL:[NSURL URLWithString:temp.thumbImgUrlString] placeholderImage:[UIImage imageNamed:@"imgpholder.png"]];
     cell.summaryLabel.text = temp.summary;
     cell.timeLabel.text = temp.pubTime;
     //view counts and comments

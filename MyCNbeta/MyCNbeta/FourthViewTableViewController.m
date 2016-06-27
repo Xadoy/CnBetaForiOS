@@ -7,16 +7,21 @@
 //
 
 #import "FourthViewTableViewController.h"
-
+#import "ProgressHUD.h"
 @interface FourthViewTableViewController ()
+{
 
+    NSArray         *_allSelectorArrs;
+}
 @end
 
 @implementation FourthViewTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSArray *selectorArr0 = @[@"caching",@"emptyMethod",@"emptyMethod",@"deleteCachedImg"];
+    NSArray *selectorArr1 = @[@"emptyMethod",@"emptyMethod",@"emptyMethod"];
+    _allSelectorArrs = @[selectorArr0,selectorArr1];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,14 +38,39 @@
     title.frame = CGRectMake(0, 0, 122,38);
     self.navigationController.topViewController.navigationItem.titleView = title;
     
+    _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0];
+    NSLog(@"image counts:%lu",(unsigned long)[[SDImageCache sharedImageCache]getDiskCount]);
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSLog(@"%d,%d",indexPath.section,indexPath.row);
+    SEL tempSelector = NSSelectorFromString(_allSelectorArrs[indexPath.section][indexPath.row]);
+    
+    [self performSelector:tempSelector withObject:nil];
+    
+}
 
 
+#pragma mark -methods for section 0
+-(void)caching{
+    
+}
+-(void)deleteCachedImg{
+    [[SDImageCache sharedImageCache]clearDiskOnCompletion:^{
+        [ProgressHUD showSuccess:@"清除完成"];
+        _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0];
+    }];
+    
+}
+-(void)emptyMethod{
+    
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

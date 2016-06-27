@@ -10,7 +10,7 @@
 #import "NewsModel.h"
 #import "ThirdTableViewCell.h"
 #import "MJRefresh.h"
-
+#import <WebImage/UIImageView+WebCache.h>
 @interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray      *_newsArr;
@@ -97,8 +97,9 @@
     NSUInteger row = [indexPath row];
     NewsModel *temp = _newsArr[row];
     cell.titleLabel.text =temp.title;
-    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
-    cell.thumbImg.image = img;
+//    UIImage *img = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:temp.thumbImgUrlString]]];
+//    cell.thumbImg.image = img;
+    [cell.thumbImg sd_setImageWithURL:[NSURL URLWithString:temp.thumbImgUrlString] placeholderImage:[UIImage imageNamed:@"imgpholder.png"]];
     cell.summaryLabel.text = temp.summary;
     cell.timeLabel.text = temp.pubTime;
     

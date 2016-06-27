@@ -8,7 +8,7 @@
 
 #import "ThirdTableViewCell.h"
 
-#define SCREENWIDTH 320.0
+#define SCREENWIDTH [[UIScreen mainScreen]bounds].size.width
 @implementation ThirdTableViewCell
 
 - (void)awakeFromNib {
