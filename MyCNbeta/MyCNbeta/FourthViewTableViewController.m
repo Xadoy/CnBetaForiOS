@@ -38,7 +38,7 @@
     title.frame = CGRectMake(0, 0, 122,38);
     self.navigationController.topViewController.navigationItem.titleView = title;
     
-    _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0];
+    _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0/1024.0];
     NSLog(@"image counts:%lu",(unsigned long)[[SDImageCache sharedImageCache]getDiskCount]);
     
 }
@@ -64,7 +64,7 @@
 -(void)deleteCachedImg{
     [[SDImageCache sharedImageCache]clearDiskOnCompletion:^{
         [ProgressHUD showSuccess:@"清除完成"];
-        _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0];
+        _cacheSizeLabel.text = [NSString stringWithFormat:@"%.1f MB",[[SDImageCache sharedImageCache]getSize]/1024.0/1024.0];
     }];
     
 }
