@@ -11,10 +11,10 @@ If you have any suggestion in terms of the app design or something else, please 
 
 ####Screenshots of the app:
 
-![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/miImgs2/screenshot1.png)
-![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot2.png)
-![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot3.png)<br /> 
-![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot4.png)
+![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/miimgs2/screenshot1.png)
+![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot2.png)<br /> 
+![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot3.png)
+![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot4.png)<br /> 
 ![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot5.png)
 ![](https://raw.githubusercontent.com/Xadoy/CnBetaForiOS/master/mdimgs2/screenshot6.png)<br /> 
 
